@@ -1,0 +1,150 @@
+h1 {
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 145%;
+  span {
+    color: $green;
+  }
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 145%;
+  &.sm {
+    font-size: 32px;
+  }
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 100%;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160%;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+p {
+  &.big {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+.main {
+  overflow: hidden;
+  padding-top: 114px;
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $mainFont;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  border-radius: 50px;
+  &.primary {
+    padding: 11px 35px;
+    background-color: $primary;
+    color: $white;
+    &:hover {
+      opacity: 1;
+      background-color: $green;
+      color: $main;
+    }
+  }
+  &.secondary {
+    padding: 11px 38px;
+    background-color: rgba($white, 0.07);
+    color: $white;
+  }
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  a {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 100%;
+    font-weight: 400;
+    color: $primary;
+    padding: 5px 14px;
+    background-color: rgba($primary, 0.07);
+    margin-right: 7px;
+    border-radius: 18px;
+    &:hover {
+      opacity: 1;
+      background-color: rgba($primary, 1);
+      color: $white;
+    }
+    &:last-child {
+      margin: 0;
+    }
+    span {
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+    svg {
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+    }
+  }
+}
+.shape {
+  width: 782px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+  }
+  // &::before {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 85%;
+  //   height: 53%;
+  //   content: "";
+  //   background: rgba(11, 52, 78, 0.76);
+  //   filter: blur(50px);
+  //   border-radius: 50%;
+  // }
+  // &::after {
+  //   position: absolute;
+  //   bottom: 0;
+  //   right: 0;
+  //   width: 85%;
+  //   height: 53%;
+  //   content: "";
+  //   background: rgba(11, 52, 78, 0.76);
+  //   filter: blur(50px);
+  //   border-radius: 50%;
+  // }
+}

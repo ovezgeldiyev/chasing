@@ -1,0 +1,117 @@
+.footer {
+  padding: 55px 0 30px;
+  background: #031520;
+  position: relative;
+  z-index: 2;
+  .auto__container {
+    max-width: 1228px;
+  }
+  &__inner {
+    position: relative;
+    &-image {
+      position: absolute;
+      bottom: calc(100% + 18px);
+      left: 6%;
+      width: 34%;
+      max-width: 253px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+    &-logo {
+      width: 150px;
+      margin: 0 auto 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 36px;
+      img {
+        width: 100%;
+      }
+    }
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 28px;
+      border-top: 1px solid #ffffff21;
+    }
+    &-social {
+      display: flex;
+      align-items: center;
+      a {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 8px;
+        background: #ffffff0f;
+        border-radius: 50%;
+        color: $white;
+        &:hover {
+          color: #05263b;
+          background-color: $primary;
+        }
+        &:last-child {
+          margin: 0;
+        }
+        svg {
+          width: 50%;
+          height: 50%;
+        }
+      }
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      color: #ffffff45;
+    }
+  }
+}
+// 1180px
+@mixin footer-xlg-xxlg {
+  .footer {
+    &__inner {
+      &-image {
+        left: 2%;
+        width: 30%;
+      }
+    }
+  }
+}
+// 540px
+@mixin footer-xsm-sm {
+  .footer {
+    padding: 64px 0 22px;
+    &__inner {
+      &-image {
+        bottom: calc(100% + 22px);
+        left: 1%;
+        width: 34%;
+        max-width: 130px;
+      }
+      &-logo {
+        margin-bottom: 25px;
+      }
+      &-row {
+        flex-direction: column;
+        padding-top: 24px;
+      }
+      &-social {
+        margin-bottom: 25px;
+        justify-content: center;
+        a {
+          margin-right: 12px;
+        }
+      }
+      p {
+        order: 2;
+      }
+    }
+  }
+}

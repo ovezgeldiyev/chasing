@@ -1,0 +1,143 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+  // @include hero-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+  h1 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 55px;
+  }
+  @include choice-xxxlg-xxxxlg;
+  @include faq-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+  // @include hero-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+  .auto__container {
+    padding: 0 30px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 48px;
+  }
+  @include hero-xlg-xxlg;
+  @include count-xlg-xxlg;
+  @include info-xlg-xxlg;
+  @include token-xlg-xxlg;
+  @include choice-xlg-xxlg;
+  @include join-xlg-xxlg;
+  @include footer-xlg-xxlg;
+}
+// 1024px
+@include lg-xlg {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  .main {
+    padding-top: 68.03px;
+  }
+  @include header-lg-xlg;
+  @include nav-lg-xlg;
+  @include hero-lg-xlg;
+  @include benefits-lg-xlg;
+  @include info-lg-xlg;
+  @include choice-lg-xlg;
+  @include faq-lg-xlg;
+}
+// 930px
+@include md-lg {
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 54px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  @include hero-md-lg;
+  @include benefits-md-lg;
+  @include count-md-lg;
+  @include mission-md-lg;
+  @include info-md-lg;
+  @include portal-md-lg;
+  @include token-md-lg;
+  @include choice-md-lg;
+  @include roadmap-md-lg;
+  @include faq-md-lg;
+  @include join-md-lg;
+}
+// 750px
+@include sm-md {
+  .auto__container {
+    padding: 0 20px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  p {
+    &.big {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  @include benefits-sm-md;
+  @include info-sm-md;
+  @include count-sm-md;
+  @include join-sm-md;
+}
+// 650px
+@include sm-md-extra {
+  @include token-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+  .social {
+    a {
+      margin-right: 4px;
+      padding: 5px 10px;
+      svg {
+        margin-right: 4px;
+      }
+    }
+  }
+  @include hero-xsm-sm;
+  @include benefits-xsm-sm;
+  @include count-xsm-sm;
+  @include info-xsm-sm;
+  @include mission-xsm-sm;
+  @include portal-xsm-sm;
+  @include choice-xsm-sm;
+  @include roadmap-xsm-sm;
+  @include faq-xsm-sm;
+  @include join-xsm-sm;
+  @include footer-xsm-sm;
+}
+// 440px
+@include xxsm-xsm {
+  // @include hero-xxsm-xsm;
+}
+// 390px
+@include xxxsm-xxsm {
+  .auto__container {
+    padding: 0 15px;
+  }
+  @include info-xxxsm-xxsm;
+}
